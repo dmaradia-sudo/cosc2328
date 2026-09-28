@@ -1,0 +1,73 @@
+<!-- HW4 – COSC 2328 – Professor McCurry
+     Implemented by: [Diego Maradiaga] -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>FutureWeb 2026 — Registration</title>
+<meta name="author" content="Diego Maradiaga">
+<meta name="assignment" content="homework 4">
+<link rel="stylesheet" href="css/hw4.css">
+</head>
+<body>
+<header>
+<h1 id="event-name">FutureWeb 2026</h1>
+<p class="subhead">The conference for the future of web development</p>
+</header>
+<main class="container">
+<div class="event-info">
+<h2>Event Details</h2>
+<ul>
+<li>Date: March 12-14, 2026</li>
+<li>Location: Austin, TX</li>
+<li>Speakers: Juan Pedro, Arya Stark, Paul Atreides</li>
+</ul>
+
+<div class="image-wrapper">
+<img src="images/conference.jpg" alt="Audience watching a speaker at a conference">
+</div>
+</div>
+
+<div class="registration-form">
+<form action="https://httpbin.org/post" method="post" enctype="multipart/form-data">
+
+<fieldset>
+<legend>Attendee Details</legend>
+
+<label for="name">Name</label>
+<input type="text" id="name" name="name" required>
+
+<label for="email">Email</label>
+<input type="email" id="email" name="email" required>
+
+<label for="arrival">Date of Arrival</label>
+<input type="date" id="arrival" name="arrival" required>
+</fieldset>
+
+<fieldset>
+<legend>Session Preferences</legend>
+
+<label for="track">Track Selection</label>
+<select id="track" name="track">
+<optgroup label="Frontend">
+<option value="react">React</option>
+<option value="vue">Vue</option>
+<option value="css">CSS</option>
+</optgroup>
+<optgroup label="Backend">
+<option value="node">Node.js</option>
+<option value="python">Python</option>
+<option value="docker">Docker</option>
+</optgroup>
+</select>
+
+<label for="resume">Upload Resume/Portfolio</label>
+<input type="file" id="resume" name="resume" accept=".pdf,.docx">
+</fieldset>
+<button type="submit" class="submit-btn">Register</button>
+</form>
+</div>
+
+</main>
+</body>
+</html>

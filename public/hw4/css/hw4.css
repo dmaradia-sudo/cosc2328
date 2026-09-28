@@ -1,0 +1,90 @@
+/* HW4 - COSC 2328 - Professor McCurry - Implemented by Diego Maradiaga */
+
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+:root {
+--main-color: #1c0f8c;
+--space: 16px;
+}
+
+body {
+background-color: #522abf;
+color: #2b2b2b;
+font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+header {
+padding: var(--space);
+text-align: center;
+color: #fff;
+}
+
+#event-name {
+font-size: 48px;
+}
+
+.subhead {
+color: #ddd;
+font-style: italic;
+}
+
+.container {
+max-width: 1200px;
+margin: 0 auto;
+padding: var(--space);
+}
+
+.image-wrapper {
+padding: var(--space);
+border: 2px solid var(--main-color);
+margin: 20px auto;
+border-radius: 10px;
+width: fit-content;
+}
+
+.image-wrapper img {
+max-width: 100%;
+width: 300px;
+}
+
+.registration-form form {
+background-color: #fff;
+padding: var(--space);
+border-radius: 10px;
+}
+
+input,
+select {
+width: 100%;
+padding: 8px;
+margin-bottom: var(--space);
+}
+
+input:focus,
+select:focus {
+border-color: var(--main-color);
+}
+
+.submit-btn {
+padding: 10px 20px;
+background-color: var(--main-color);
+color: #fff;
+border: none;
+border-radius: 6px;
+}
+
+.submit-btn:hover {
+color: #c0392b;
+background-color: #fceae9;
+}
+
+@media (min-width: 768px) {
+.container {
+display: flex;
+gap: var(--space);
+}
+}
