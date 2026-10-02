@@ -41,8 +41,8 @@ const hasAccount = true;
 const isEmailVerified = false;
 const agreedToTerms = true;
 
-if (hasAccount && isEmailVerified && agreedToTerms) {
-  console.log("Access granted.");
+if ((hasAccount && agreedToTerms) || isEmailVerified) {
+  console.log("Registration allowed");
 } else {
-  console.log("Access denied.");
+  console.log("Registration blocked");
 }
