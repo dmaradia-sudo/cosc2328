@@ -1,0 +1,23 @@
+/*
+  HW6 - Interactive Product Calculator
+  COSC 2328, Professor McCurry
+  Implemented by: Diego Maradiaga
+*/
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.site-header,
+.site-footer {
+  text-align: center;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.results-hidden {
+  display: none;
+}

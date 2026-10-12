@@ -1,0 +1,68 @@
+<!--
+  HW6 - Interactive Product Calculator
+  COSC 2328, Professor McCurry
+  Implemented by: Diego Maradiaga 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HW6 - Interactive Product Calculator</title>
+  <link rel="stylesheet" href="css/hw6.css">
+  <script defer src="js/hw6-script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <h1>Product Order Calculator</h1>
+  </header>
+
+  <main class="container">
+    <form id="orderForm">
+      <fieldset>
+        <legend>Order Details</legend>
+
+        <div>
+          <label for="product">Product</label>
+          <select id="product">
+            <option value="" selected disabled>Choose a product</option>
+            <option value="laptop">Laptop</option>
+            <option value="tablet">Tablet</option>
+            <option value="phone">Phone</option>
+            <option value="monitor">Monitor</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="quantity">Quantity</label>
+          <input type="number" id="quantity" min="1" max="10" value="1">
+        </div>
+
+        <div>
+          <label for="discountCode">Discount Code</label>
+          <input type="text" id="discountCode">
+        </div>
+      </fieldset>
+
+      <button type="submit">Calculate Total</button>
+    </form>
+
+    <div id="results" class="results-hidden">
+      <p>Product: <span id="resProduct"></span></p>
+      <p>Quantity: <span id="resQuantity"></span></p>
+      <p>Subtotal: <span id="resSubtotal"></span></p>
+      <p>Discount: <span id="resDiscount"></span></p>
+      <p>Tax: <span id="resTax"></span></p>
+      <p>Total: <span id="resTotal"></span></p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Your Name - COSC 2328, Professor McCurry</p>
+  </footer>
+
+  <noscript>
+    <p>This page requires JavaScript.</p>
+  </noscript>
+</body>
+</html>
