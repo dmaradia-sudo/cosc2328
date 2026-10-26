@@ -1,0 +1,35 @@
+/* HW7 – COSC 2328 – Professor McCurry
+   Implemented by: [Diego Maradiaga] */
+
+
+#loadingMessage {
+  text-align: center;
+  font-size: 20px;
+}
+
+.error-message {
+  text-align: center;
+  color: red;
+}
+
+.app-header {
+  text-align: center;
+}
+
+.roster {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 15px;
+}
+
+.pokemon-card {
+  border: 1px solid gray;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px lightgray;
+  padding: 10px;
+  text-align: center;
+}
+
+.letters {
+  font-size: 14px;
+}
