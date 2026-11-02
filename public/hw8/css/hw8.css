@@ -1,0 +1,63 @@
+/* HW8 – COSC 2328 – Professor McCurry
+   Implemented by: [Diego Maradiaga] */
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f1f1f1;
+}
+
+.app-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+}
+
+.form-area {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.form-area input {
+  flex: 1;
+}
+
+.task-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-left-width: 6px;
+  border-radius: 6px;
+}
+
+.task-card.low { border-left-color: green; }
+.task-card.medium { border-left-color: orange; }
+.task-card.high { border-left-color: red; }
+
+.badge {
+  padding: 2px 8px;
+  border-radius: 10px;
+  color: white;
+}
+
+.badge.low { background: green; }
+.badge.medium { background: orange; }
+.badge.high { background: red; }
+
+.error-message {
+  width: 100%;
+  margin: 0;
+  padding: 6px;
+  color: red;
+  background: #ffe0e0;
+}
+
+.empty-state {
+  color: gray;
+  font-style: italic;
+}
